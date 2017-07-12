@@ -1,0 +1,199 @@
+/* ================================= 
+  Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+  background: #f8fdf3;
+}
+p,
+form button {
+  color: white;  
+}
+h1 {
+  text-shadow: 0 1px 0 rgba(0,0,0, .4);
+  line-height: .65;
+  margin-top: .5em;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background: rgba(88, 183, 205, .5);
+}
+p {
+  font-size: 1.1em;
+  text-shadow: 0 1px 0 rgba(0,0,0, .25);
+}
+form {
+  width: 60%;
+  background: white;
+  display: inline-block;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  border-radius: .2em;
+  border: solid 4px white;
+  box-shadow: 0 1px 14px rgba(0,0,0, .12);
+}
+form button {
+  padding: 0.2em;
+  font-size: 1em;
+  background: #7bcbc4;
+  border-radius: .2em;
+  margin-right: 2px;
+}
+ol {
+  padding: 0;
+  margin: 2em 0 1em;
+}
+ol li {
+  padding: 1em;
+  background: #fff;
+  border-radius: .2em;
+  border: solid 1px rgba(88, 183, 205, .2);
+  border-bottom: solid 2px rgba(88, 183, 205, .2);
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+input {
+  border: 1px solid black;
+  outline: none;
+}
+li span, 
+li input[type=text] {
+  color: black;
+  font-size: 1em;
+  margin-bottom: .3em;
+}
+li input[type=text] {
+  padding: .2em;
+  width: 95%;
+  border: 1px dotted rgba(0,0,0, .2);
+}
+li label {
+  font-size: 1em;
+  display: block;
+  color: black;
+}
+li span, 
+li input[type=text]:first-child {
+  display: block;
+}
+li span {
+  display: block;
+}
+li button {
+  font-size: .78em;
+  margin-top: 1.65em;
+  margin-right: .4em;
+   margin-left: .4em;
+  border-radius: .3em;
+  padding: .4em .6em;
+  color: white;
+  background: #58b7cd;
+  display: inline-block;
+}
+li button:last-child {
+  background: rgba(88, 183, 205, .5);
+}
+div > input:last-child {
+  font-size: 1em;
+  margin-left: 6px;
+}
+div > label {
+  margin-right: 5px;
+  color: black;
+}
+.smoker {
+  color: black;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+pre {
+  width:80%;
+  font-size: 1em;
+  margin: 10px;
+  color: black;
+  display: inline-block;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) {
+  header {
+    padding: 1.25em;
+  }
+  h1 {
+    font-size: 2em;
+    margin: .3em 0 0;
+  }
+  ol li {
+    margin-bottom: 1em;
+  }
+  form {
+    width: 95%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2.5em;
+  }
+  form button {
+    padding: 5px;
+    margin-top: .5em;
+  }
+  form input {
+    font-size: 1em;
+    text-align: center;
+  }
+  form label {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  header {
+    height: 280px;
+    padding: 2.5em 1em 1em;  
+    background-position: 0 -95px; 
+  } 
+  div > label {
+    margin-top: 12px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  form {
+    margin: 4.15em auto 0; 
+  }
+  ol {
+    display: -webkit-flex;
+    display: flex;
+    clear: both;  
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;    
+    flex-wrap: wrap;
+    padding-top: 1.25em;
+  }
+  ol li {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 47.5%;
+    flex-basis: 47.5%;
+    margin: 0 1.25% 1em;
+  }
+}
+@media (min-width: 880px) { 
+  ol li {
+    -webkit-flex-basis: 20%;
+    flex-basis: 20%;
+  }
+}
